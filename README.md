@@ -1,6 +1,6 @@
 #  This Web Page Describe For The Simple Multifunctional Calculator Web App
 
-Screen Shots Of The Calculator Web Application
+    Screen Shots Of The Calculator Web Application
 
 Calculator switch off state
 ![Screenshot 2024-11-01 123212](https://github.com/user-attachments/assets/f4fbee7c-55c7-4509-a604-46c9e1d48c17)
