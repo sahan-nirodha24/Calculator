@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 320px;
+}
+
+.display {
+    background-color: #eaeaea;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#input-display {
+    font-size: 24px;
+    text-align: right;
+    margin: 5px 0;
+    font-weight: bold;
+    color: blue;
+}
+
+#output-display {
+    font-size: 24px;
+    text-align: right;
+    margin: 5px 0;
+    font-weight: bolder;
+    color: red
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.power-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b6b6b6;
+}
+
+.number {
+    background-color: #46fff9;
+    font-weight: 700;
+}
+
+.number:hover{
+    background-color: #ffffff;
+}
+
+.operator {
+    background-color: #ffee00;
+    font-weight: 900;
+}
+
+.operator:hover{
+    background-color: #ffffff;
+}
+
+.clear {
+    background-color: #fb0000;
+    font-weight: 700;
+}
+
+.equals {
+    background-color: #37ff00;
+    font-weight: 900;
+}
+
+.number-pad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 600px) {
+    .calculator {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #input-display, #output-display {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .number-pad {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .calculator {
+        width: 400px;
+        padding: 20px;
+    }
+
+    #input-display, #output-display {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 18px;
+        font-size: 18px;
+    }
+
+    .number-pad {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+    }
+}
